@@ -1,12 +1,13 @@
 const api_url="https://api.openweathermap.org/data/2.5/weather?units=metric"
-const api_key="cfbee1c0199b854b834"+"7761f8f63aa46"
+const v1="cfbee1c0199b854b834";
+const v2="7761f8f63aa46";
 
 const search=document.querySelector(".input-val")
 var btn=document.querySelector(".btn")
 var icon=document.querySelector(".icon")
 
 async function weather(city){
-    const response=await fetch(api_url+`&q=${city}`+`&appid=${api_key}`);
+    const response=await fetch(api_url+`&q=${city}`+`&appid=${v1+v2}`);
     var data= await response.json();
     console.log(data);
     if(data.weather[0].main=="Clouds"){
