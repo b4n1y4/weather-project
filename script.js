@@ -1,5 +1,5 @@
 const api_url="https://api.openweathermap.org/data/2.5/weather?units=metric"
-const api_key="cfbee1c0199b854b8347761f8f63aa46"
+const api_key="cfbee1c0199b854b834"+"7761f8f63aa46"
 
 const search=document.querySelector(".input-val")
 var btn=document.querySelector(".btn")
