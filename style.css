@@ -2,11 +2,12 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 50px;
+
     
 }
 .card{
     width: 500px;
-    background: linear-gradient(to right, #56CCF2, #2F80ED);
+    background: linear-gradient(to right, #4c81ad, #29445d);
     border-radius: 20px;
     color: white;
 }

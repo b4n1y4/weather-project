@@ -16,6 +16,7 @@ async function weather(city){
     else{
         document.querySelector(".error").style.visibility="hidden";
         document.querySelector(".result").style.display="block";
+        console.log(data);
         if(data.weather[0].main=="Clouds"){
             icon.src="images/clouds.png";
         }
@@ -31,7 +32,8 @@ async function weather(city){
         else if(data.weather[0].main=="Drizzle"){
             icon.src="images/drizzle.png";
         }
-        else if(data.weather[0].main=="Mist"){
+        else if(data.weather[0].main=="Fog"){
+            console.log("hello");
             icon.src="images/mist.png";
         }
         else if(data.weather[0].main=="Snow"){
