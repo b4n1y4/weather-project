@@ -77,3 +77,12 @@ gap: 10px;
 .col p{
     margin-top: -15px;
 }
+.error{
+    color: rgba(255, 0, 0, 0.886);
+    margin-left: 100px;;
+    font-size: 20px;
+    visibility:hidden;
+}
+.result{
+    display: none;
+}
