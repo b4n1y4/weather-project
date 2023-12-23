@@ -47,6 +47,12 @@ async function weather(city){
 }
     
     btn.addEventListener("click",()=>{
-        weather(search.value)
+        weather(search.value);
+    })
+
+    search.addEventListener("keydown",(event)=>{
+        if(event.key=="Enter"){
+            weather(search.value);
+        }
     })
     
