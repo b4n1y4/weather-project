@@ -1,13 +1,12 @@
 const api_url="https://api.openweathermap.org/data/2.5/weather?units=metric"
-const v1="cfbee1c0199b854b834";
-const v2="7761f8f63aa46";
+const v1="cfbee1c0199b854b8347761f8f63aa46";
 
 const search=document.querySelector(".input-val")
 var btn=document.querySelector(".btn")
 var icon=document.querySelector(".icon")
 
 async function weather(city){
-    const response=await fetch(api_url+`&q=${city}`+`&appid=${v1+v2}`);
+    const response=await fetch(api_url+`&q=${city}`+`&appid=${v1}`);
     var data= await response.json();
     if(response.status==404) {
         document.querySelector(".error").style.visibility="visible";
